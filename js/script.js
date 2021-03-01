@@ -1,4 +1,4 @@
-// PRIMO PUNTO SULLA MAIL
+// PRIMO PUNTO -MAIL
 var listMail = ["d.sadotti@gmail.com", "sado96@live.it", "sadotti@hotmail.it"];
 var yourMail;
 var validateMail;
@@ -21,7 +21,7 @@ if(validateMail === yourMail){
 }
 
 
-// SECONDO PUNTO DADI
+// SECONDO PUNTO -DADI
 var yourNumber;
 var pcNumber;
 
