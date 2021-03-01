@@ -1,18 +1,23 @@
 // PRIMO PUNTO SULLA MAIL
 var listMail = ["d.sadotti@gmail.com", "sado96@live.it", "sadotti@hotmail.it"];
 var yourMail;
+var validateMail;
 
 yourMail = prompt("Inserisci la tua mail e verifica che sia nella lista");
 
-
 for(var i = 0; i < listMail.length; i++){
   if(yourMail === listMail[i]){
-    alert("Sei in lista, puoi entrare!")
+    validateMail = yourMail;
     i = listMail.length;
   }
-  // if(yourMail !== listMail[i]){
-  //   var fuori = alert("Non sei in lista, fuori!")
-  // }
+}
+
+document.getElementById("yourMail").innerHTML = "Questa è la tua mail: " + yourMail;
+
+if(validateMail === yourMail){
+  document.getElementById("validateMail").innerHTML = "Sei in lista, puoi entrare!";
+}else{
+  document.getElementById("validateMail").innerHTML = "Non sei il lista, Fuori!";
 }
 
 
